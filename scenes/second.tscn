@@ -1,0 +1,153 @@
+[gd_scene format=4 uid="uid://dsdvbbbiubncj"]
+
+[ext_resource type="Texture2D" uid="uid://djmk0srfgyafe" path="res://assets/game/backgrounds/cloud_left.png" id="1_k3pxv"]
+[ext_resource type="Texture2D" uid="uid://dptqmtay4plwp" path="res://assets/game/backgrounds/cloud_trees.png" id="2_q84fm"]
+[ext_resource type="Texture2D" uid="uid://dys7320ghojh6" path="res://assets/game/backgrounds/cloud_hills.png" id="3_5gxk2"]
+[ext_resource type="Texture2D" uid="uid://1b8hp0rm864l" path="res://assets/game/backgrounds/cloud_right.png" id="4_gut5n"]
+[ext_resource type="TileSet" uid="uid://dkowcf1ljh41j" path="res://assets/game/tilesets/kenney_terrain_tileset.tres" id="5_q84fm"]
+
+[node name="Second" type="Node2D" unique_id=492689519]
+
+[node name="Background" type="Node2D" parent="." unique_id=1688931183]
+
+[node name="SkyColor" type="Polygon2D" parent="Background" unique_id=1376818442]
+z_index = -30
+color = Color(0.8509804, 0.9411765, 0.9372549, 1)
+polygon = PackedVector2Array(0, 0, 468, 0, 468, 130.0972, 468, 270, 0, 270)
+
+[node name="CloudBand_01" type="Sprite2D" parent="Background" unique_id=727034318]
+z_index = -20
+texture_filter = 1
+position = Vector2(12, 150)
+texture = ExtResource("1_k3pxv")
+
+[node name="CloudBand_02" type="Sprite2D" parent="Background" unique_id=545911727]
+z_index = -20
+texture_filter = 1
+position = Vector2(36, 150)
+texture = ExtResource("2_q84fm")
+
+[node name="CloudBand_03" type="Sprite2D" parent="Background" unique_id=397617822]
+z_index = -20
+texture_filter = 1
+position = Vector2(60, 150)
+texture = ExtResource("3_5gxk2")
+
+[node name="CloudBand_04" type="Sprite2D" parent="Background" unique_id=987683116]
+z_index = -20
+texture_filter = 1
+position = Vector2(84, 150)
+texture = ExtResource("4_gut5n")
+
+[node name="CloudBand_05" type="Sprite2D" parent="Background" unique_id=970698372]
+z_index = -20
+texture_filter = 1
+position = Vector2(108, 150)
+texture = ExtResource("1_k3pxv")
+
+[node name="CloudBand_06" type="Sprite2D" parent="Background" unique_id=858771030]
+z_index = -20
+texture_filter = 1
+position = Vector2(132, 150)
+texture = ExtResource("2_q84fm")
+
+[node name="CloudBand_07" type="Sprite2D" parent="Background" unique_id=40665274]
+z_index = -20
+texture_filter = 1
+position = Vector2(156, 150)
+texture = ExtResource("3_5gxk2")
+
+[node name="CloudBand_08" type="Sprite2D" parent="Background" unique_id=963982126]
+z_index = -20
+texture_filter = 1
+position = Vector2(180, 150)
+texture = ExtResource("4_gut5n")
+
+[node name="CloudBand_09" type="Sprite2D" parent="Background" unique_id=2001725972]
+z_index = -20
+texture_filter = 1
+position = Vector2(204, 150)
+texture = ExtResource("1_k3pxv")
+
+[node name="CloudBand_10" type="Sprite2D" parent="Background" unique_id=1939518810]
+z_index = -20
+texture_filter = 1
+position = Vector2(228, 150)
+texture = ExtResource("2_q84fm")
+
+[node name="CloudBand_11" type="Sprite2D" parent="Background" unique_id=260565429]
+z_index = -20
+texture_filter = 1
+position = Vector2(252, 150)
+texture = ExtResource("3_5gxk2")
+
+[node name="CloudBand_12" type="Sprite2D" parent="Background" unique_id=931688660]
+z_index = -20
+texture_filter = 1
+position = Vector2(276, 150)
+texture = ExtResource("4_gut5n")
+
+[node name="CloudBand_13" type="Sprite2D" parent="Background" unique_id=134250965]
+z_index = -20
+texture_filter = 1
+position = Vector2(300, 150)
+texture = ExtResource("1_k3pxv")
+
+[node name="CloudBand_14" type="Sprite2D" parent="Background" unique_id=981986875]
+z_index = -20
+texture_filter = 1
+position = Vector2(324, 150)
+texture = ExtResource("2_q84fm")
+
+[node name="CloudBand_15" type="Sprite2D" parent="Background" unique_id=2124783965]
+z_index = -20
+texture_filter = 1
+position = Vector2(348, 150)
+texture = ExtResource("3_5gxk2")
+
+[node name="CloudBand_16" type="Sprite2D" parent="Background" unique_id=147076298]
+z_index = -20
+texture_filter = 1
+position = Vector2(372, 150)
+texture = ExtResource("4_gut5n")
+
+[node name="CloudBand_17" type="Sprite2D" parent="Background" unique_id=1650172411]
+z_index = -20
+texture_filter = 1
+position = Vector2(396, 150)
+texture = ExtResource("1_k3pxv")
+
+[node name="CloudBand_18" type="Sprite2D" parent="Background" unique_id=1608112526]
+z_index = -20
+texture_filter = 1
+position = Vector2(420, 150)
+texture = ExtResource("2_q84fm")
+
+[node name="CloudBand_19" type="Sprite2D" parent="Background" unique_id=1559608990]
+z_index = -20
+texture_filter = 1
+position = Vector2(444, 150)
+texture = ExtResource("3_5gxk2")
+
+[node name="CloudBand_20" type="Sprite2D" parent="Background" unique_id=835893537]
+z_index = -20
+texture_filter = 1
+position = Vector2(468, 150)
+texture = ExtResource("4_gut5n")
+
+[node name="TerrainTileMaps" type="Node2D" parent="." unique_id=1254124247]
+
+[node name="TerrainBase" type="TileMapLayer" parent="TerrainTileMaps" unique_id=1411012311]
+position = Vector2(9, 9)
+tile_map_data = PackedByteArray("AAAAAAwAAAACAAUAAAABAAwAAAACAAUAAAACAAwAAAACAAUAAAADAAwAAAACAAUAAAAEAAwAAAACAAUAAAAFAAwAAAACAAUAAAAGAAwAAAACAAUAAAAHAAwAAAACAAUAAAAIAAwAAAACAAUAAAAJAAwAAAACAAUAAAAKAAwAAAACAAUAAAALAAwAAAACAAUAAAAMAAwAAAACAAUAAAANAAwAAAACAAUAAAAOAAwAAAACAAUAAAAPAAwAAAACAAUAAAAQAAwAAAACAAUAAAARAAwAAAACAAUAAAASAAwAAAACAAUAAAATAAwAAAACAAUAAAAUAAwAAAACAAUAAAAVAAwAAAACAAUAAAAWAAwAAAACAAUAAAAXAAwAAAACAAUAAAAYAAwAAAACAAUAAAAZAAwAAAACAAUAAAAAAA0AAAAEAAUAAAABAA0AAAACAAYAAAACAA0AAAAEAAUAAAADAA0AAAACAAYAAAAEAA0AAAACAAYAAAAFAA0AAAAEAAUAAAAGAA0AAAACAAYAAAAHAA0AAAACAAYAAAAIAA0AAAAEAAUAAAAJAA0AAAACAAYAAAAKAA0AAAAEAAUAAAALAA0AAAAEAAUAAAAMAA0AAAACAAYAAAANAA0AAAACAAYAAAAOAA0AAAAEAAUAAAAPAA0AAAAEAAUAAAAQAA0AAAAEAAUAAAARAA0AAAACAAYAAAASAA0AAAACAAYAAAATAA0AAAAEAAUAAAAUAA0AAAACAAYAAAAVAA0AAAACAAYAAAAWAA0AAAACAAYAAAAXAA0AAAAEAAUAAAAYAA0AAAACAAYAAAAZAA0AAAAEAAUAAAAAAA4AAAACAAYAAAABAA4AAAACAAYAAAACAA4AAAAEAAUAAAADAA4AAAACAAYAAAAEAA4AAAAEAAUAAAAFAA4AAAACAAYAAAAGAA4AAAAEAAUAAAAHAA4AAAAEAAUAAAAIAA4AAAAEAAUAAAAJAA4AAAAEAAUAAAAKAA4AAAAEAAUAAAALAA4AAAAEAAUAAAAMAA4AAAACAAYAAAANAA4AAAACAAYAAAAOAA4AAAACAAYAAAAPAA4AAAACAAYAAAAQAA4AAAAEAAUAAAARAA4AAAACAAYAAAASAA4AAAACAAYAAAATAA4AAAACAAYAAAAUAA4AAAACAAYAAAAVAA4AAAACAAYAAAAWAA4AAAAEAAUAAAAXAA4AAAAEAAUAAAAYAA4AAAACAAYAAAAZAA4AAAAEAAUAAAD//wwAAAACAAUAAAD//w0AAAAEAAEAAAD//w4AAAAEAAEAAAAAAAsAAAAKAAYAAAAAAAoAAAAKAAUAAAA=")
+tile_set = ExtResource("5_q84fm")
+
+[node name="TerrainDetailsA" type="TileMapLayer" parent="TerrainTileMaps" unique_id=1807246520]
+z_index = 1
+position = Vector2(9, 9)
+tile_set = ExtResource("5_q84fm")
+
+[node name="TerrainDetailsB" type="TileMapLayer" parent="TerrainTileMaps" unique_id=2146545829]
+z_index = 2
+position = Vector2(9, 9)
+tile_set = ExtResource("5_q84fm")

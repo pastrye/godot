@@ -6,9 +6,15 @@
 [ext_resource type="Texture2D" uid="uid://1b8hp0rm864l" path="res://assets/game/backgrounds/cloud_right.png" id="4_edvbp"]
 [ext_resource type="TileSet" uid="uid://dkowcf1ljh41j" path="res://assets/game/tilesets/kenney_terrain_tileset.tres" id="5_4etix"]
 [ext_resource type="PackedScene" uid="uid://c1u8k6ny02t4y" path="res://scenes/player.tscn" id="9_bauo3"]
+[ext_resource type="Texture2D" uid="uid://drpclrlafntsm" path="res://assets/kenney/tiles/tile_0130.png" id="10_choun"]
 [ext_resource type="PackedScene" path="res://scenes/prefabs/hazards/spikes_double.tscn" id="15_ycytw"]
 [ext_resource type="PackedScene" path="res://scenes/prefabs/interactables/spring_red.tscn" id="16_nih4k"]
 [ext_resource type="PackedScene" path="res://scenes/prefabs/collectibles/coin_gold_round.tscn" id="17_rmlt8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wp5od"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp5od"]
+size = Vector2(15, 19)
 
 [node name="Main" type="Node2D" unique_id=2061129075]
 
@@ -203,3 +209,24 @@ z_index = 5
 position = Vector2(315, 63)
 
 [node name="Signs" type="Node2D" parent="Level/PrefabInstances" unique_id=113197076]
+
+[node name="deathzone" type="Area2D" parent="Level" unique_id=1042657810]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/deathzone" unique_id=1832749137]
+position = Vector2(258, 280)
+shape = SubResource("WorldBoundaryShape2D_wp5od")
+
+[node name="door" type="Area2D" parent="Level" unique_id=606446041]
+
+[node name="Sprite2D" type="Sprite2D" parent="Level/door" unique_id=241647268]
+position = Vector2(324, 217)
+texture = ExtResource("10_choun")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/door" unique_id=1161892175]
+position = Vector2(324, 216)
+shape = SubResource("RectangleShape2D_wp5od")
+one_way_collision = true
+
+[connection signal="body_entered" from="Level/PrefabInstances/Hazards/Spikes_01" to="Level/ActorsAndCharacters/Player" method="_on_spikes_01_body_entered"]
+[connection signal="body_entered" from="Level/PrefabInstances/Hazards/Spikes_02" to="Level/ActorsAndCharacters/Player" method="_on_spikes_02_body_entered"]
+[connection signal="body_entered" from="Level/door" to="Level/ActorsAndCharacters/Player" method="_on_door_body_entered"]
